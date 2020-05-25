@@ -1,0 +1,56 @@
+
+body
+{
+background-image: url('Ethanpokedex2.png');
+background-position:fixed;
+background-repeat:no-repeat;
+background-size: 100vw 100vh;
+}
+.pokedex
+{
+position:relative;
+top:25%;
+left:56%;
+}
+.pokemonTable
+{
+overflow-y:scroll;
+height:17%;
+width:47%;
+display:inline-block;
+color:white;
+font-size:32;
+width:75%;
+border:"1";
+}
+.pokePic {
+	position: absolute;
+}
+.PokeInfoPage {
+	background-color: green;
+	position: fixed;
+	width: 37%;
+	height: 45%;
+	top: 29%;
+	left: 6%;
+}
+.PName {
+	padding-left: 48%;
+	color: blue;
+}
+
+function addRowHandlers() {
+  var table = document.getElementById("pokemonTable");
+  var rows = table.getElementsByTagName("tr");
+  for (i = 0; i < rows.length; i++) {
+    var currentRow = table.rows[i];
+    var createClickHandler = function(row) {
+      return function() {
+        var cell = row.getElementsByTagName("td")[0];
+        var id = cell.innerHTML;
+        alert("id:");
+      };
+    };
+    currentRow.onclick = createClickHandler(currentRow);
+  }
+}

@@ -1,0 +1,83 @@
+.PAbilities {
+	position: absolute;
+	left: 70%;
+	top: 20%;
+	font-size: 24;
+}
+
+.PCatch {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	font-size: 24;
+}
+
+.PStats {
+	position: absolute;
+	left: 30%;
+	top: 20%;
+	font-size: 24;
+}
+
+p {
+	align: center;
+}
+
+.pokeIdCard {
+	display: inline-block;
+	border-style: solid;
+	text-align: center;
+	font-size: 24;
+	width: 24%;
+}
+
+.PokePlain {
+	position: absolute;
+	background: green;
+	width: 56.5%;
+	top: 20%;
+	right: 21.75%;
+}
+
+body {
+	background-image: url("PBackgroundTemp.jpg");
+	background-position: static;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.TitleDiv {
+	position: absolute;
+	text-align: center;
+	right: 21.75%;
+	top: 2%;
+	width: 56.5%;
+	font-size: 100px;
+}
+
+.SearchBarDiv {
+	position: absolute;
+	text-align: center;
+	right: 21.75%;
+	top: 17%;
+	width: 56.5%;
+}
+
+.PokePic {
+	width: 100px;
+	height: 100px;
+}
+
+.SearchBarDiv {
+	background-color: blue;
+	display: inline;
+}
+
+#typeSearch {
+	float: left;
+}
+
+#nameSearch {
+	float: right;
+}
